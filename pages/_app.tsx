@@ -2,6 +2,8 @@ import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
 import Head from "next/head";
 import theme from "./api/theme";
 import "../components/app.css";
+import "../components/markdown.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 function MyApp({ Component, pageProps }) {
   return (
