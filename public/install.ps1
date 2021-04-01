@@ -10,7 +10,7 @@ $sm_winLoc = "$HOME\sm"
 
 if (Test-Path -path $loc) {
   Remove-Item $loc -Recurse -Force
-} else if (Test-Path -path $sm_winLoc) {
+} elseif (Test-Path -path $sm_winLoc) {
   Remove-Item $sm_winLoc -Recurse -Force
 }
 
