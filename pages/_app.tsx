@@ -1,6 +1,6 @@
 import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
 import Head from "next/head";
-import theme from "../theme";
+import theme from "./api/theme";
 import "../components/app.css";
 
 function MyApp({ Component, pageProps }) {
