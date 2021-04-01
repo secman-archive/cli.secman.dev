@@ -39,8 +39,8 @@ const Index = () => (
         <List spacing={3} my={0}>
           <ListItem>
             <ListIcon as={CheckCircleIcon} color="green.500" />
-            <ChakraLink isExternal href={Routes.secman} flexGrow={1} mr={2}>
-              Secman <LinkIcon />
+            <ChakraLink isExternal href={Routes.secmanOrg} flexGrow={1} mr={2}>
+              Secman Org <LinkIcon />
             </ChakraLink>
           </ListItem>
         </List>
