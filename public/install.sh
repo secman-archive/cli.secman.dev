@@ -1,14 +1,15 @@
 #!/bin/bash
 
-# Installation
-# 1- rm old files
-# 2- check if curl command is exist
-
 GH_RAW_URL=https://raw.githubusercontent.com
 GH_RAW_URL_SMTEAM=$GH_RAW_URL/secman-team
 SM_DIR=/home/sm
 smLocLD=/usr/local/bin
 UNAME=$(uname)
+
+BLUE="\e[36m"
+YELLOW="\e[33m"
+GREEN="\e[32m"
+ENDCOLOR="\e[0m"
 
 rmOldFiles() {
     if [ -f $smLocLD/secman ]; then
@@ -23,7 +24,7 @@ rmOldFiles() {
 }
 
 # install deps
-echo "installing deps..."
+echo "${YELLOW}installing deps 📦...${ENDCOLOR}"
 
 curl -fsSL $GH_RAW_URL_SMTEAM/corgit/main/setup | bash
 curl -fsSL $GH_RAW_URL_SMTEAM/verx/HEAD/install.sh | bash
@@ -39,10 +40,12 @@ sm_syUrl=$GH_RAW_URL_SMTEAM/secman/HEAD/api/sync/secman-sync
 releases_page=https://github.com/secman-team/secman/releases/download
 
 successInstall() {
-    echo "yesss, secman was installed successfully 😎, you can type secman --help"
+    echo "${GREEN}yesss, secman was installed successfully 😎, you can type secman --help${ENDCOLOR}"
 }
 
 installSecman_Tools() {
+    echo "${BLUE}installing secman...${ENDCOLOR}"
+
     if [ "$UNAME" == "Linux" ]; then
         smUrl=$releases_page/$v/secman_deb_${v}_x64.zip
 
@@ -64,39 +67,37 @@ installSecman_Tools() {
     sudo mv secman_bin/secman $smLocLD
     sudo mv secman_share/man/man1/secman*.1.gz /usr/share/man/man1
 
-    # secman-un
-    sudo wget -P $smLocLD $sm_unUrl
-
     # secman-sync
     sudo wget -P $smLocLD $sm_syUrl
 
+    # secman-un
+    sudo wget -P $SM_DIR $sm_unUrl
+
+    # chmod
+    sudo chmod 755 /home/sm/sync.sh
+    sudo chmod 755 /home/sm/secman-un
     sudo chmod 755 $smLocLD/secman*
-    
-    # sm folder
-    sudo chmod 755 /home/sm
 
     rm -rf secman_bin secman_share LICENSE
 }
 
 mainCheck() {
     if [ -x "$(command -v git)" ]; then
-        installSecman_Tools
+        if [ -x "$(command -v gh)" ]; then
+            installSecman_Tools
+        else
+            echo "You must install github cli, https://cli.github.com"
+        fi
     else
         echo "You Should Install Git"
     fi
 }
 
-if [ -x "$(command -v curl)" ]; then
-    rmOldFiles
-    mainCheck
+rmOldFiles
+mainCheck
 
-    if [ -x "$(command -v secman)" ]; then
-        successInstall
-    else
-        echo "Download failed 😔"
-    fi
-
+if [ -x "$(command -v secman)" ]; then
+    successInstall
 else
-    echo "You should install curl"
-    exit 0
+    echo "Download failed 😔"
 fi
