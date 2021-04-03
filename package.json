@@ -2,7 +2,7 @@
   "name": "secman",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 3003",
     "build": "next build",
     "start": "next start",
     "export": "next export",

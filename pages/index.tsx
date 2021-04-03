@@ -14,7 +14,6 @@ const Index = () => (
   <div>
     <Head>
       <title>Secman Deps</title>
-      <link rel="icon" href="/secman.svg" type="image/svg+xml" />
     </Head>
     <Container height="100vh">
       <Hero />
