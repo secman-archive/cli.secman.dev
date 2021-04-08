@@ -3,7 +3,7 @@ import { Routes } from "../pages/api/routes";
 
 export const Hero = ({ title }) => (
   <Flex justifyContent="center" alignItems="center" height="100vh">
-    <img src={Routes.logoURL} style={{ paddingTop: "25px" }} className="" />
+    <img src={Routes.gsmURL} style={{ paddingTop: "25px" }} />
     <Heading fontSize="5vw">{title}</Heading>
   </Flex>
 );

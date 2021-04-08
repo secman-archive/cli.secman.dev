@@ -5,4 +5,5 @@ export const Routes = {
   statusSite: "https://secman.checklyhq.com",
   logoURL: "https://imgs-secman.web.app/logo.png",
   smURL: "https://imgs-secman.web.app/sm.png",
+  gsmURL: "https://imgs-secman.web.app/glitsh_sm.png"
 };
