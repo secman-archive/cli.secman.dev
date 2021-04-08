@@ -1,4 +1,4 @@
-# [<img src="https://secman-team.github.io/logo.png" align="center" />](https://secman-team.github.io) **Deps**
+# [<img src="https://imgs-secman.web.app/logo.png" align="center" />](https://secman-team.github.io) **Deps**
 
 <!-- <img src="https://github.com/secman-team/secman-team.github.io/blob/main/public/glitsh_secman.svg" /> -->
 
