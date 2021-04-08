@@ -12,7 +12,7 @@ export const CTA = () => (
     maxWidth="48rem"
     py={2}
   >
-    <Link isExternal href={Routes.secman} flexGrow={1} mx={2}>
+    <Link isExternal href={Routes.secmanSite} flexGrow={1} mx={2}>
       <Button width="100%" variant="outline" variantcolor="green">
         Secman Website
       </Button>

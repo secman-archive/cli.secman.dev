@@ -50,7 +50,7 @@ const Index = () => (
       <Footer>
         <Text>
           ⌨ By{" "}
-          <Link isExternal href={Routes.secman}>
+          <Link isExternal href={Routes.secmanSite}>
             secman
           </Link>{" "}
           🤝{" "}
