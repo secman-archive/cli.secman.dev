@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Secman\" && git subtree push --prefix out origin gh-page"
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && echo '*.sh text eol=lf' >> out/.gitattributes && git add out/ && git commit -m \"Deploy Secman\" && git subtree push --prefix out origin gh-page"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.8",
