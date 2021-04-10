@@ -11,13 +11,13 @@ export const CTA = () => {
           <Row>
             <Col>
               <div className="px-5 py-2 text-bold">
-                <Text className="inter font-bold">
+                <Text className="font-bold">
                   Products
                 </Text>
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href={core}
                 >
@@ -26,7 +26,7 @@ export const CTA = () => {
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href={URLS.docs.sm_sync}
                 >
@@ -35,7 +35,7 @@ export const CTA = () => {
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href="#"
                 >
@@ -50,11 +50,11 @@ export const CTA = () => {
           <Row>
             <Col>
               <div className="px-5 py-2 text-bold">
-                <Text className="inter font-bold">Resources</Text>
+                <Text className="font-bold">Resources</Text>
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href={URLS.docs.main}
                 >
@@ -63,7 +63,7 @@ export const CTA = () => {
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href={URLS.cli}
                 >
@@ -72,7 +72,7 @@ export const CTA = () => {
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href={URLS.docs.cryptography}
                 >
@@ -81,7 +81,7 @@ export const CTA = () => {
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href={URLS.docs.commands}
                 >
@@ -96,13 +96,13 @@ export const CTA = () => {
           <Row>
             <Col>
               <div className="px-5 py-2 text-bold">
-                <Text className="inter font-bold">
+                <Text className="font-bold">
                   Company
                 </Text>
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href={URLS.changelog}
                 >
@@ -111,7 +111,7 @@ export const CTA = () => {
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href={URLS.contact}
                 >
@@ -120,7 +120,7 @@ export const CTA = () => {
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href={URLS.posts}
                 >
@@ -129,7 +129,7 @@ export const CTA = () => {
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href={URLS.deps_site}
                 >
@@ -138,7 +138,7 @@ export const CTA = () => {
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href={URLS.sys_statuses}
                 >
@@ -147,7 +147,7 @@ export const CTA = () => {
               </div>
               <div className="px-5 py-2">
                 <Link
-                  className="inter text-base leading-6 text-gray-500"
+                  className="text-base leading-6 text-gray-500"
                   isExternal
                   href={URLS.team}
                 >

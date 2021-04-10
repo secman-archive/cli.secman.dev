@@ -20,14 +20,14 @@ const Index = () => (
       <Main>
         <div className="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
           <div key="windows" className="my-4">
-            <Text>Windows</Text>
+            <Text className="font-bold my-2">Windows</Text>
             <CodeBlock
               language="bash"
               code={`iwr -useb https://secman-team.github.io/install.ps1 | iex`}
             />
           </div>
           <div key="ml" className="my-4">
-            <Text>MacOS/Linux</Text>
+            <Text className="font-bold my-2">MacOS/Linux</Text>
             <CodeBlock
               language="bash"
               code={`curl -fsSL https://secman-team.github.io/install.sh | bash`}
@@ -43,22 +43,11 @@ const Index = () => (
             </ListItem>
           </List>
         </div>
+        <div></div>
       </Main>
 
       <DarkModeSwitch />
       <CTA />
-      <Footer>
-        <Text>
-          ⌨ By{" "}
-          <Link isExternal href={Routes.secmanSite}>
-            secman
-          </Link>{" "}
-          🤝{" "}
-          <Link isExternal href="https://chakra-ui.com">
-            chakra-ui
-          </Link>
-        </Text>
-      </Footer>
     </Container>
   </div>
 );

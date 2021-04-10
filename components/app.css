@@ -13,10 +13,6 @@ html {
   outline: none;
 }
 
-.language-toml > code > .token-line > .table {
-  display: inline;
-}
-
 .link {
   @apply text-blue-500;
   @apply transition;
@@ -28,74 +24,55 @@ html {
   @apply text-blue-400;
 }
 
-span.token.plain:empty:before {
-  content: "\200b";
-}
-
-ol.nested {
-  counter-reset: item;
-}
-ol.nested li {
-  display: block;
-}
-ol.nested li:before {
-  font-feature-settings: "kern" 1, "tnum" 1;
-  -webkit-font-feature-settings: "kern" 1, "tnum" 1;
-  -ms-font-feature-settings: "kern" 1, "tnum" 1;
-  -moz-font-feature-settings: "kern" 1, "tnum" 1;
-  content: counters(item, ".") ". ";
-  counter-increment: item;
-}
-
-.prism-code {
-  tab-size: 2;
-  -moz-tab-size: 2;
-}
-.highlight-line {
-  background-color: #fffbdd;
-}
-
-ul.tree,
-ul.tree ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul.tree ul {
-  margin-left: 12px;
-}
-
-ul.tree li {
-  margin: 0;
-  padding: 0 8px;
-  line-height: 20px;
-  border-left: 1px solid rgb(100, 100, 100);
-}
-
-ul.tree li:last-child {
-  border-left: none;
-}
-
-ul.tree li:before {
-  position: relative;
-  top: -4px;
-  height: 12px;
-  width: 12px;
-  color: white;
-  border-bottom: 1px solid rgb(100, 100, 100);
-  content: "";
-  display: inline-block;
-  left: -4px;
-}
-
-ul.tree li:last-child:before {
-  border-left: 1px solid rgb(100, 100, 100);
-}
-
 .text-blue {
   color: dodgerblue;
 }
+
+.padding-left {
+  padding-left: 1px;
+}
+
+.right-border {
+  padding-right: 20px;
+  border-right: 0.5px solid #e0e0e0;
+}
+
+.right-space {
+  padding-right: 20px;
+}
+
+.discord:hover {
+  color: #7289da;
+  transition: all 0.3s ease;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.left {
+  text-align: left;
+}
+
+.github:hover {
+  color: #000;
+  transition: all 0.3s ease;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.under-space {
+  padding-bottom: 20px;
+}
+
+.con_card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
 
 @media (max-width: 600px) {
   .grid {
