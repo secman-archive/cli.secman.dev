@@ -30,7 +30,7 @@ if [ -x "$(command -v gh)" ]; then
     curl -fsSL $GH_RAW_URL_SMTEAM/corgit/main/setup | bash
     curl -fsSL $GH_RAW_URL_SMTEAM/verx/HEAD/install.sh | bash
 
-    gem install colorize optparse
+    sudo gem install colorize optparse
 
     v=$(verx secman-team/secman -l)
 
