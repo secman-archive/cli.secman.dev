@@ -8,6 +8,16 @@ export const Hero = ({ title }) => (
   </Flex>
 );
 
+export const DockerHero = ({ title }) => (
+  <Flex justifyContent="center" alignItems="center" height="100vh">
+    <Heading fontSize="4vw">{title}</Heading>
+  </Flex>
+);
+
 Hero.defaultProps = {
   title: "Welcome to Secman Deps 📦",
+};
+
+DockerHero.defaultProps = {
+  title: "Secman With 🐳",
 };

@@ -13,6 +13,13 @@ export const Routes = {
 export const URLS = {
   gh: "https://github.com",
 
+  docker: {
+    main: "/docker",
+    hub: "https://hub.docker.com/r/smrc/secman",
+    gh_packages: "https://github.com/secman-team/secman-docker/packages/733282",
+    ghcr: "https://ghcr.io/secman-team/secman",
+  },
+
   secman_org: "",
 
   secman_repo: "",
@@ -50,7 +57,7 @@ export const URLS = {
     id: `${core}/#features`,
   },
 
-  deps_site: "https://secman-team.github.io",
+  deps_site: "/",
 
   sys_statuses: "https://secman.checklyhq.com",
 };
