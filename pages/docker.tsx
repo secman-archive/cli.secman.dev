@@ -40,6 +40,7 @@ const DockerPage = () => (
             />
           </div>
         </div>
+        <div></div>
       </Main>
 
       <DarkModeSwitch />
