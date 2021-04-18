@@ -1,4 +1,4 @@
-export ZSH="/home/smx/.oh-my-zsh"
+export ZSH="/home/secman_yo/.oh-my-zsh"
 
 ZSH_THEME="af-magic"
 
