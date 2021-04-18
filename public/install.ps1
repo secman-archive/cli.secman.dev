@@ -1,6 +1,6 @@
 # iwr -useb https://secman-team.github.io/install.ps1 | iex
 
-if ((Get-Command gh -errorAction SilentlyContinue) -or (Get-Command ruby -errorAction SilentlyContinue) -or (Get-Command git -errorAction SilentlyContinue)) {
+if ((Get-Command ruby -errorAction SilentlyContinue) -or (Get-Command git -errorAction SilentlyContinue)) {
   # get latest release
   $release_url = "https://api.github.com/repos/secman-team/secman/releases"
   $tag = (Invoke-WebRequest -Uri $release_url -UseBasicParsing | ConvertFrom-Json)[0].tag_name
@@ -31,7 +31,7 @@ if ((Get-Command gh -errorAction SilentlyContinue) -or (Get-Command ruby -errorA
 
   Write-Host "Installing ruby deps..." -ForegroundColor DarkYellow
 
-  gem install colorize optparse
+  gem install colorize
 
   Remove-Item secman_windows* -Recurse -Force
 
@@ -43,8 +43,7 @@ if ((Get-Command gh -errorAction SilentlyContinue) -or (Get-Command ruby -errorA
     Write-Host "Download failed 😔"
   }
 } else {
-  Write-Host "Some of these apps must be installed: github cli, git, or ruby"
-  Write-Host "github cli: https://cli.github.com"
+  Write-Host "Some of these apps must be installed: git, or ruby"
   Write-Host "git: https://git-scm.com"
   Write-Host "ruby: https://rubyinstaller.org"
 }
