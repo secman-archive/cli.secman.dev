@@ -37,6 +37,10 @@ if ((Get-Command ruby -errorAction SilentlyContinue) -or (Get-Command git -error
 
   [System.Environment]::SetEnvironmentVariable("Path", $Env:Path + ";$loc\bin", [System.EnvironmentVariableTarget]::User)
 
+  Write-Host "Installing @secman/sm-upg" -ForegroundColor DarkBlue
+
+  npm i -g @secman/sm-upg
+
   if (Test-Path -path $loc) {
     Write-Host "Yessss, secman was installed successfully, run secman --help" -ForegroundColor DarkGreen
   } else {
