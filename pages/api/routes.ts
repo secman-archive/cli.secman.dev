@@ -15,7 +15,7 @@ export const URLS = {
 
   docker: {
     main: "/docker",
-    hub: "https://hub.docker.com/r/smrc/secman",
+    hub: "https://hub.docker.com/r/smcr/secman",
     gh_packages: "https://github.com/secman-team/secman-docker/packages/733282",
     ghcr: "https://ghcr.io/secman-team/secman",
   },
