@@ -37,7 +37,7 @@ export const URLS = {
 
   cli: `${core}/cli`,
 
-  changelog: `${core}/changelog`,
+  changelog: "https://secman-chlog.web.app",
 
   team: `${core}/team`,
 
