@@ -4,13 +4,13 @@ import theme from "./api/theme";
 import "../components/app.css";
 import "../components/markdown.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import { Routes } from "./api/routes";
+import { URLS } from "./api/routes";
 
 function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <link rel="icon" href={Routes.gsmURL} type="image/png+xml" />
+        <link rel="icon" href={URLS.icon} type="image/png+xml" />
       </Head>
       <ChakraProvider resetCSS theme={theme}>
         <ColorModeProvider
