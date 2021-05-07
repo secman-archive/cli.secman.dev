@@ -2,8 +2,17 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter.ttf");
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+.inter {
+  font-family: Inter;
 }
 
 /* removes focus outlines on mouse clicks */
@@ -41,8 +50,21 @@ html {
   padding-right: 20px;
 }
 
+.left-space {
+  padding-left: 20px;
+}
+
 .discord:hover {
   color: #7289da;
+  transition: all 0.3s ease;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.twitter:hover {
+  color: #1DA1F2;
   transition: all 0.3s ease;
   transition-property: all;
   transition-duration: 0.3s;

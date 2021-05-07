@@ -7,8 +7,8 @@ import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import { CTA } from "../components/CTA";
 import { Footer } from "../components/Footer";
 import Head from "next/head";
-import { Routes } from "./api/routes";
 import CodeBlock from "../components/CodeBlock";
+import { URLS } from "./api/routes";
 
 const Index = () => (
   <div>
@@ -23,21 +23,21 @@ const Index = () => (
             <Text className="font-bold my-2">Windows</Text>
             <CodeBlock
               language="bash"
-              code={`iwr -useb https://secman-team.github.io/install.ps1 | iex`}
+              code={`iwr -useb https://deps.secman.dev/install.ps1 | iex`}
             />
           </div>
           <div key="ml" className="my-4">
             <Text className="font-bold my-2">MacOS/Linux</Text>
             <CodeBlock
               language="bash"
-              code={`curl -fsSL https://secman-team.github.io/install.sh | bash`}
+              code={`curl -fsSL https://deps.secman.dev/install.sh | bash`}
             />
           </div>
           <List spacing={3} my={0}>
             <ListItem>
               <i className="fab fa-github-alt" />
               &nbsp;
-              <Link isExternal href={Routes.secmanRepo} flexGrow={1} mr={2}>
+              <Link isExternal href={URLS.secman_repo} flexGrow={1} mr={2}>
                 Secman Repo <LinkIcon />
               </Link>
             </ListItem>

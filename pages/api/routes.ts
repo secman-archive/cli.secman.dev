@@ -1,14 +1,6 @@
-export const core = "https://secman.vercel.app";
+export const core = "https://secman.dev";
 
-export const Routes = {
-  secmanSite: "https://secman.vercel.app",
-  secmanOrg: "https://github.com/secman-team",
-  secmanRepo: "https://github.com/secman-team/secman",
-  statusSite: "https://secman.checklyhq.com",
-  logoURL: "https://imgs-secman.web.app/logo.png",
-  smURL: "https://imgs-secman.web.app/sm.png",
-  gsmURL: "https://imgs-secman.web.app/glitsh_sm.png",
-};
+export const imgs_secman = "https://assets.secman.dev";
 
 export const URLS = {
   gh: "https://github.com",
@@ -24,47 +16,54 @@ export const URLS = {
 
   secman_repo: "",
 
+  secman_site_repo: "",
+
   sm_scoop_repo: "",
 
   docs: {
     main: `${core}/docs`,
-    sm_sync: "",
     cryptography: "",
     commands: "",
+    sm_upg: "",
   },
 
-  posts: `${core}/posts`,
+  news: `${core}/blog`,
 
-  cli: `${core}/cli`,
+  get_secman: `${core}/get-secman`,
 
-  changelog: "https://secman-chlog.web.app",
+  changelog: "https://changelog.secman.dev",
 
   team: `${core}/team`,
 
-  contact: `${core}/contact`,
+  twitter: "https://twitter.com/SecmanDev",
 
-  getting_started: {
-    main: `${core}/getting_started`,
-  },
+  discord: "https://discord.gg/fR5EXyuy",
 
-  installation: {
-    main: `${core}/installation`,
-  },
+  github_relases_page: "",
 
-  discord: "https://discord.gg/secman",
+  building_from_source: "",
 
-  features: {
-    id: `${core}/#features`,
-  },
+  // logos
+  icon: `${imgs_secman}/icon.svg`,
 
-  deps_site: "/",
+  logo: `${imgs_secman}/logo.svg`,
+
+  logo_white: `${imgs_secman}/logo_white.svg`,
+
+  homebrew_tap: "",
+
+  deps_site: "https://deps.secman.dev",
 
   sys_statuses: "https://secman.checklyhq.com",
 };
 
 URLS.secman_org = `${URLS.gh}/secman-team`;
 URLS.secman_repo = `${URLS.secman_org}/secman`;
-URLS.docs.sm_sync = `${URLS.docs.main}/secman-sync`;
+URLS.secman_site_repo = `${URLS.secman_org}/secman.dev`;
+URLS.docs.sm_upg = `${URLS.docs.main}/Secman/sm-upg`;
 URLS.docs.cryptography = `${URLS.docs.main}/cryptography`;
-URLS.docs.commands = `${URLS.docs.main}/commands`;
+URLS.docs.commands = `${URLS.docs.main}/commands/all`;
+URLS.github_relases_page = `${URLS.secman_repo}/releases/latest`;
+URLS.building_from_source = `${URLS.docs.main}/Secman/building_from_source`;
+URLS.homebrew_tap = `${URLS.secman_org}/homebrew-smx`;
 URLS.sm_scoop_repo = `${URLS.secman_org}/sm-scoop`;
