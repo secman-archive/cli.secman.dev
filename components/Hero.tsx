@@ -1,9 +1,9 @@
 import { Flex, Heading } from "@chakra-ui/react";
-import { Routes } from "../pages/api/routes";
+import { URLS } from "../pages/api/routes";
 
 export const Hero = ({ title }) => (
   <Flex justifyContent="center" alignItems="center" height="100vh">
-    <img src={Routes.gsmURL} style={{ paddingTop: "25px" }} />
+    <img src={URLS.icon} style={{ paddingTop: "25px" }} />
     <Heading fontSize="5vw">{title}</Heading>
   </Flex>
 );
