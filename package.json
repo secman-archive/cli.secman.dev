@@ -1,5 +1,5 @@
 {
-  "name": "secman",
+  "name": "secman-deps",
   "version": "1.0.0",
   "scripts": {
     "dev": "next -p 3003",
