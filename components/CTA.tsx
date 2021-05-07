@@ -40,6 +40,14 @@ export const CTA = () => {
                   SM-UPG
                 </Link>
               </div>
+              <div className="px-5 py-2">
+                <Link
+                  className="inter text-base leading-6 text-gray-500"
+                  href={URLS.docker.main}
+                >
+                  Docker
+                </Link>
+              </div>
             </Col>
           </Row>
         </div>
@@ -126,7 +134,6 @@ export const CTA = () => {
               <div className="px-5 py-2">
                 <Link
                   className="inter text-base leading-6 text-gray-500"
-                  isExternal
                   href={URLS.deps_site}
                 >
                   Deps

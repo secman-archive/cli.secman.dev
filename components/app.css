@@ -3,8 +3,8 @@
 @import "tailwindcss/utilities";
 
 @font-face {
-  font-family: "Inter";
-  src: url("../public/fonts/Inter.ttf");
+  font-family: Inter;
+  src: url("https://assets.secman.dev/fonts/Inter.ttf");
 }
 
 html {
@@ -64,7 +64,7 @@ html {
 }
 
 .twitter:hover {
-  color: #1DA1F2;
+  color: #1da1f2;
   transition: all 0.3s ease;
   transition-property: all;
   transition-duration: 0.3s;
@@ -94,7 +94,6 @@ html {
   font-size: 1.25rem;
   line-height: 1.5;
 }
-
 
 @media (max-width: 600px) {
   .grid {

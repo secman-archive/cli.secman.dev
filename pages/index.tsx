@@ -20,14 +20,14 @@ const Index = () => (
       <Main>
         <div className="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
           <div key="windows" className="my-4">
-            <Text className="font-bold my-2">Windows</Text>
+            <Text className="inter font-bold my-2">Windows</Text>
             <CodeBlock
               language="bash"
               code={`iwr -useb https://deps.secman.dev/install.ps1 | iex`}
             />
           </div>
           <div key="ml" className="my-4">
-            <Text className="font-bold my-2">MacOS/Linux</Text>
+            <Text className="inter font-bold my-2">MacOS/Linux</Text>
             <CodeBlock
               language="bash"
               code={`curl -fsSL https://deps.secman.dev/install.sh | bash`}
@@ -37,7 +37,7 @@ const Index = () => (
             <ListItem>
               <i className="fab fa-github-alt" />
               &nbsp;
-              <Link isExternal href={URLS.secman_repo} flexGrow={1} mr={2}>
+              <Link className="inter" isExternal href={URLS.secman_repo} flexGrow={1} mr={2}>
                 Secman Repo <LinkIcon />
               </Link>
             </ListItem>

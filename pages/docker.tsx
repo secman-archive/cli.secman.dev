@@ -19,7 +19,7 @@ const DockerPage = () => (
         <div className="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
           <div key="ghcr" className="my-4">
             <Link isExternal href={URLS.docker.hub}>
-              <Text className="font-bold my-2">
+              <Text className="inter font-bold my-2">
                 From Docker Hub
               </Text>
             </Link>
@@ -30,7 +30,7 @@ const DockerPage = () => (
           </div>
           <div key="ghcr" className="my-4">
             <Link isExternal href={URLS.docker.ghcr}>
-              <Text className="font-bold my-2">
+              <Text className="inter font-bold my-2">
                 From Github Packages
               </Text>
             </Link>

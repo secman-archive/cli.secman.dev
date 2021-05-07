@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <link rel="icon" href={URLS.icon} type="image/png+xml" />
+        <link rel="icon" href={URLS.icon} type="image/svg+xml" />
       </Head>
       <ChakraProvider resetCSS theme={theme}>
         <ColorModeProvider

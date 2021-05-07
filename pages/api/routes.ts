@@ -52,7 +52,7 @@ export const URLS = {
 
   homebrew_tap: "",
 
-  deps_site: "https://deps.secman.dev",
+  deps_site: "/",
 
   sys_statuses: "https://secman.checklyhq.com",
 };
