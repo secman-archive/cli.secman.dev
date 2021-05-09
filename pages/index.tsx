@@ -23,14 +23,14 @@ const Index = () => (
             <Text className="inter font-bold my-2">Windows</Text>
             <CodeBlock
               language="bash"
-              code={`iwr -useb https://deps.secman.dev/install.ps1 | iex`}
+              code={`iwr -useb https://get.secman.dev/install.ps1 | iex`}
             />
           </div>
           <div key="ml" className="my-4">
             <Text className="inter font-bold my-2">MacOS/Linux</Text>
             <CodeBlock
               language="bash"
-              code={`curl -fsSL https://deps.secman.dev/install.sh | bash`}
+              code={`curl -fsSL https://get.secman.dev/install.sh | bash`}
             />
           </div>
           <List spacing={3} my={0}>
