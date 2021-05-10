@@ -1,4 +1,4 @@
-# iwr -useb https://secman-team.github.io/install.ps1 | iex
+# iwr -useb https://get.secman.dev/install.ps1 | iex
 
 if ((Get-Command git -errorAction SilentlyContinue) -or (Get-Command npm -errorAction SilentlyContinue)) {
   # get latest release
@@ -24,6 +24,8 @@ if ((Get-Command git -errorAction SilentlyContinue) -or (Get-Command npm -errorA
   Remove-Item secman_windows* -Recurse -Force
 
   [System.Environment]::SetEnvironmentVariable("Path", $Env:Path + ";$loc\bin", [System.EnvironmentVariableTarget]::User)
+
+  npm i -g @secman/sm-upg
 
   if (Test-Path -path $loc) {
     Write-Host "Yessss, secman was installed successfully, run secman --help" -ForegroundColor DarkGreen
