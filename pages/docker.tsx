@@ -25,7 +25,7 @@ const DockerPage = () => (
             </Link>
             <CodeBlock
               language="bash"
-              code={`docker pull smrc/secman`}
+              code={`docker pull smcr/secman`}
             />
           </div>
           <div key="ghcr" className="my-4">

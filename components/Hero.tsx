@@ -15,7 +15,7 @@ export const DockerHero = ({ title }) => (
 );
 
 Hero.defaultProps = {
-  title: "Welcome to Secman Deps 📦",
+  title: "Secman CLI",
 };
 
 DockerHero.defaultProps = {

@@ -5,7 +5,7 @@ import { Container } from "../components/Container";
 import { Main } from "../components/Main";
 import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import { CTA } from "../components/CTA";
-import { Footer } from "../components/Footer";
+// import { Footer } from "../components/Footer";
 import Head from "next/head";
 import CodeBlock from "../components/CodeBlock";
 import { URLS } from "./api/routes";

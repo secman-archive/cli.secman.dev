@@ -54,7 +54,7 @@ export const URLS = {
 
   deps_site: "/",
 
-  sys_statuses: "https://secman.checklyhq.com",
+  sys_statuses: "https://status.secman.dev",
 };
 
 URLS.secman_org = `${URLS.gh}/secman-team`;
