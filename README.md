@@ -1,4 +1,4 @@
-# [<img src="https://assets.secman.dev/icon.svg" width="100px" align="center" />](https://deps.secman.dev) **Deps**
+# [<img src="https://assets.secman.dev/icon.svg" width="100px" align="center" />](https://cli.secman.dev) **Deps**
 
 deps for secman installation
 
