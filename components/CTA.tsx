@@ -71,9 +71,9 @@ export const CTA = () => {
                 <Link
                   className="inter text-base leading-6 text-gray-500"
                   isExternal
-                  href={URLS.get_secman}
+                  href={URLS.dl}
                 >
-                  Get Secman
+                  Download Secman
                 </Link>
               </div>
               <div className="px-5 py-2">
@@ -134,9 +134,9 @@ export const CTA = () => {
               <div className="px-5 py-2">
                 <Link
                   className="inter text-base leading-6 text-gray-500"
-                  href={URLS.deps_site}
+                  href="/"
                 >
-                  Deps
+                  Secman CLI
                 </Link>
               </div>
               <div className="px-5 py-2">

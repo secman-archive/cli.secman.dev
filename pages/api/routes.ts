@@ -29,7 +29,7 @@ export const URLS = {
 
   news: `${core}/blog`,
 
-  get_secman: `${core}/get-secman`,
+  dl: `${core}/download`,
 
   changelog: "https://changelog.secman.dev",
 
@@ -51,8 +51,6 @@ export const URLS = {
   logo_white: `${imgs_secman}/logo_white.svg`,
 
   homebrew_tap: "",
-
-  deps_site: "/",
 
   sys_statuses: "https://status.secman.dev",
 };

@@ -20,7 +20,7 @@ const DockerPage = () => (
           <div key="ghcr" className="my-4">
             <Link isExternal href={URLS.docker.hub}>
               <Text className="inter font-bold my-2">
-                From Docker Hub
+                From DockerHub
               </Text>
             </Link>
             <CodeBlock
