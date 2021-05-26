@@ -10,7 +10,7 @@
   "dependencies": {
     "@chakra-ui/icons": "^1.0.8",
     "@chakra-ui/react": "^1.6.2",
-    "@emotion/react": "^11.1.5",
+    "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "autoprefixer": "^10.2.5",
