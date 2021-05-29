@@ -34,6 +34,14 @@ export const CTA = () => {
               <div className="px-5 py-2">
                 <Link
                   className="inter text-base leading-6 text-gray-500"
+                  href="/"
+                >
+                  Secman CLI
+                </Link>
+              </div>
+              <div className="px-5 py-2">
+                <Link
+                  className="inter text-base leading-6 text-gray-500"
                   isExternal
                   href={URLS.docs.sm_upg}
                 >
@@ -129,14 +137,6 @@ export const CTA = () => {
                   href={URLS.news}
                 >
                   News
-                </Link>
-              </div>
-              <div className="px-5 py-2">
-                <Link
-                  className="inter text-base leading-6 text-gray-500"
-                  href="/"
-                >
-                  Secman CLI
                 </Link>
               </div>
               <div className="px-5 py-2">
