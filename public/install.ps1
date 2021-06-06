@@ -13,7 +13,7 @@ if ((Get-Command git -errorAction SilentlyContinue) -or (Get-Command npm -errorA
 
   Write-Host "Installing secman..." -ForegroundColor DarkCyan
 
-  Invoke-WebRequest https://github.com/secman-team/secman/releases/download/$tag/secman_windows_${tag}_x64.zip -outfile secman_windows.zip
+  Invoke-WebRequest https://github.com/secman-team/secman/releases/download/$tag/secman_windows_${tag}_amd64.zip -outfile secman_windows.zip
 
   Expand-Archive secman_windows.zip
 
