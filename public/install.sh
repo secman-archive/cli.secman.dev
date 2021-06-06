@@ -33,7 +33,7 @@ installSecman() {
         sudo mv $name/bin/secman $smLocLD
         sudo mv $name/share/man/man1/secman.1 /usr/share/man/man1
 
-        rm $name
+        rm -rf $name
 
     elif [ "$UNAME" == "Darwin" ]; then
         name="secman_macos_${v}_amd64"
@@ -48,7 +48,7 @@ installSecman() {
         sudo mv $name/bin/secman $smLocLD
         sudo mv $name/share/man/man1/secman.1 /usr/share/man/man1
 
-        rm $name
+        rm -rf $name
     fi
 
     # chmod

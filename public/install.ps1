@@ -25,7 +25,7 @@ if ((Get-Command git -errorAction SilentlyContinue) -or (Get-Command npm -errorA
 
   [System.Environment]::SetEnvironmentVariable("Path", $Env:Path + ";$loc\bin", [System.EnvironmentVariableTarget]::User)
 
-  npm i -g @secman/sm-upg
+  npm i -g @secman/sm-win
 
   if (Test-Path -path $loc) {
     Write-Host "Yessss, secman was installed successfully, run secman --help" -ForegroundColor DarkGreen
