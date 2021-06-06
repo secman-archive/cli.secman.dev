@@ -18,4 +18,4 @@ Remove-Item secman_windows* -Recurse -Force
 
 [System.Environment]::SetEnvironmentVariable("Path", $Env:Path + ";$loc\bin", [System.EnvironmentVariableTarget]::User)
 
-npm i -g @secman/sm-upg
+npm i -g @secman/sm-win
