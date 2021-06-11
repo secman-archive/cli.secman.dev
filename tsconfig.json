@@ -22,6 +22,7 @@
     "tools/generate_emojis.js",
     "tools/registry_utils.js",
     "pages/404.js", 
+    "tools/generate_emojis.js",
     "pages/contact.jsx"
   ]
 }

@@ -9,7 +9,6 @@ import Header from "../components/Header";
 import { CookieBanner } from "../components/CookieBanner";
 import FO from "../components/FadeObject";
 import { InstallSection } from "../content/install_section";
-import { WhatIsSecman } from "../content/what_is_secman";
 import { URLS } from "../api/routes";
 
 const Home: NextPage = () => {
