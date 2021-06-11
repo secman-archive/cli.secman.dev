@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "redirects": [
+    { "source": "/404", "destination": "/404", "permanent": false }
+  ]
+}

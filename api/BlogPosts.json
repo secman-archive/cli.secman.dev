@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Blog post",
+    "title": "Secman v5.3.63 release notes",
+    "description": "read release notes about the new version v5.3.63.",
+    "imgUrl": "release-notes/secman_v5.3.63.svg",
+    "url": "https://secman.dev/blog/2021/06/04/secman-v5.3.63-release-notes",
+    "ctaText": "View blog post"
+  },
+  {
+    "type": "Blog post",
+    "title": "How will Secman Desktop be in the future",
+    "description": "secman desktop 🖥️, how will it be in the future?",
+    "imgUrl": "assets/Sm_Desktop.svg",
+    "url": "https://secman.dev/blog/2021/06/06/sm-desktop",
+    "ctaText": "View blog post"
+  },
+  {
+    "type": "Blog post",
+    "title": "Oh My Zsh + PowerLevel10k = 😎 terminal",
+    "description": "make your terminal more professional.",
+    "imgUrl": "news/powerlevel10k.gif",
+    "url": "https://secman.dev/blog/2021/03/30/omz_terminal",
+    "ctaText": "View blog post"
+  }
+]
