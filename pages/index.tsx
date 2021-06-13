@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import { NextPage } from "next";
 import InlineCode from "../components/InlineCode";
 import Header from "../components/Header";
-import { CookieBanner } from "../components/CookieBanner";
 import FO from "../components/FadeObject";
 import { InstallSection } from "../content/install_section";
 import { URLS } from "../api/routes";
@@ -17,7 +16,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Secman CLI</title>
       </Head>
-      <CookieBanner />
 
       <div className="bg-white">
         <div className="bg-gray-50 border-b border-gray-200">
