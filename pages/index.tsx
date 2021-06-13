@@ -48,8 +48,8 @@ const Home: NextPage = () => {
         </div>
         <div className="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8">
           <CodeBlock code={`secman insert MY_SECRET_TOKEN`} language="bash" />
-          <p className="my-4 text-gray-700">Sync Your Passwords</p>
-          <CodeBlock code="secman sync start" language="bash" />
+          <p className="my-4 text-gray-700">Authenticate With GitHub</p>
+          <CodeBlock code="secman auth login" language="bash" />
           <p className="my-4 text-gray-700">Sync Your Passwords</p>
           <CodeBlock code="secman sync start" language="bash" />
         </div>
