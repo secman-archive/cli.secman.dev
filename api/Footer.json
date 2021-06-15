@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Products",
+    "links": [
+      {
+        "text": "Secman CLI",
+        "url": "/"
+      },
+      {
+        "text": "SM-Win",
+        "url": "https://sm-win.secman.dev",
+        "isE": true
+      },
+      {
+        "text": "Secman Desktop",
+        "url": null
+      },
+      {
+        "text": "Secman CI",
+        "url": null
+      }
+    ]
+  },
+  {
+    "title": "Resources",
+    "links": [
+      {
+        "text": "Download Secman",
+        "url": "https://secman.dev/download",
+        "isE": true
+      },
+      {
+        "text": "Cryptography",
+        "url": "https://docs.secman.dev/cryptography",
+        "isE": true
+      },
+      {
+        "text": "Releases",
+        "url": "https://github.com/secman-team/secman/releases",
+        "isE": true
+      }
+    ]
+  },
+  {
+    "title": "Developers",
+    "links": [
+      {
+        "text": "Documentation",
+        "url": "https://docs.secman.dev",
+        "isE": true
+      },
+      {
+        "text": "Guides",
+        "url": "https://docs.secman.dev/guides",
+        "isE": true
+      }
+    ]
+  },
+  {
+    "title": "Company",
+    "links": [
+      {
+        "text": "Changelog",
+        "url": "https://changelog.secman.dev",
+        "isE": true
+      },
+      {
+        "text": "Blog",
+        "url": "https://secman.dev/blog",
+        "isE": true
+      },
+      {
+        "text": "System Statuses",
+        "url": "https://status.secman.dev",
+        "isE": true
+      },
+      {
+        "text": "Team",
+        "url": "https://secman.dev/team",
+        "isE": true
+      }
+    ]
+  }
+]

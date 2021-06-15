@@ -1,0 +1,9 @@
+[
+  {
+    "type": "Blog post",
+    "title": "Cryptography",
+    "description": "Password Store Initialization. secman only uses AEADs for encrypting data. When secman init is run, users are prompted for a master password...",
+    "imgUrl": "cryp.gif",
+    "url": "https://docs.secman.dev/cryptography"
+  }
+]

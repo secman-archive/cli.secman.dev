@@ -1,28 +1,30 @@
-import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
+import React from "react";
+import App from "next/app";
 import Head from "next/head";
-import theme from "./api/theme";
 import "../components/app.css";
 import "../components/markdown.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import { URLS } from "./api/routes";
+import "preact/debug";
+import { URLS } from "../api/routes";
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <div>
-      <Head>
-        <link rel="icon" href={URLS.icon} type="image/svg+xml" />
-      </Head>
-      <ChakraProvider resetCSS theme={theme}>
-        <ColorModeProvider
-          options={{
-            useSystemColorMode: true,
-          }}
-        >
-          <Component {...pageProps} />
-        </ColorModeProvider>
-      </ChakraProvider>
-    </div>
-  );
+export default class SecmanWebsiteApp extends App {
+  render(): React.ReactElement {
+    const { Component, pageProps } = this.props;
+    return (
+      <div className="h-screen">
+        <Head>
+          <link rel="icon" href={URLS.icon} type="image/svg+xml" />
+        </Head>
+        {console.log(`
+          ███████╗╗███████╗ ██████╗███╗   ███╗ █████╗ ███╗    ███╗
+          ██╔════╝║██╔════╝██╔════╝████╗ ████║██╔══██╗█████╗  ███║
+          ███████╗║█████╗  ██║     ██╔████╔██║███████║███║███╗███║
+          ╚════██║║██╔══╝  ██║     ██║╚██╔╝██║██╔══██║███║╚═█████║
+          ███████║║███████╗╚██████╗██║ ╚═╝ ██║██║  ██║███║  ╚═███║
+          ╚══════╝╚═══════╝ ╚═════╝╚═╝     ╚═╝╚═╝  ╚═╝╚══╝    ╚══╝
+        `)}
+        <Component {...pageProps} />
+      </div>
+    );
+  }
 }
-
-export default MyApp;

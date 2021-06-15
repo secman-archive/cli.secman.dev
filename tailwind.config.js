@@ -1,37 +1,118 @@
-const defaultTheme = require("tailwindcss/defaultTheme"); // eslint-disable-line
-
 module.exports = {
+  purge: ["./components/**/*.tsx", "./pages/**/*.tsx"],
+  darkMode: "class",
+  mode: "jit",
   theme: {
-    fontFamily: {
-      mono: [
-        "Menlo",
-        "Monaco",
-        '"Lucida Console"',
-        "Consolas",
-        '"Liberation Mono"',
-        '"Courier New"',
-        "monospace",
-      ],
-    },
     extend: {
+      screens: {
+        sm: "640px",
+
+        md: "768px",
+
+        lg: "1024px",
+
+        xl: "1280px",
+
+        "2xl": "1536px",
+      },
+      colors: {
+        "gray-light": "#1E90FF",
+        "gray-dark": "#111",
+        "accent-1": "#FAFAFA",
+        "accent-2": "#EAEAEA",
+        "accent-7": "#333",
+        success: "#0070f3",
+        cyan: "#79FFE1",
+        brand: {
+          100: "#82dab0",
+          200: "#69d3a0",
+          300: "#50cb90",
+          400: "#C5F1DD",
+          500: "#9FE7C7",
+          600: "#65D9A5",
+          700: "#3ECF8E",
+          800: "#38BC81",
+          900: "#10633E",
+        },
+        // Joshen TODO: At the end just rearrange the values
+        dark: {
+          100: "#eeeeee",
+          200: "#e0e0e0",
+          300: "#bbbbbb",
+          400: "#666666",
+          500: "#444444",
+          600: "#2a2a2a",
+          700: "#1f1f1f",
+          800: "#181818",
+          900: "#0f0f0f",
+        },
+        gray: {
+          100: "#eeeeee",
+          200: "#e0e0e0",
+          300: "#bbbbbb",
+          400: "#666666",
+          500: "#444444",
+          600: "#2a2a2a",
+          700: "#1f1f1f",
+          800: "#181818",
+          900: "#0f0f0f",
+        },
+      },
+      spacing: {
+        28: "7rem",
+      },
+      letterSpacing: {
+        tighter: "-.04em",
+      },
+      lineHeight: {
+        tight: 1.2,
+      },
+      fontSize: {
+        "5xl": "2.5rem",
+        "6xl": "2.75rem",
+        "7xl": "4.5rem",
+        "8xl": "6.25rem",
+      },
+      boxShadow: {
+        "light-small": "0px 4px 8px 2px rgba(107, 114, 128, 0.08)",
+        small: "0 5px 10px rgba(0, 0, 0, 0.12)",
+        medium: "0 8px 30px rgba(0, 0, 0, 0.12)",
+        override: "0px 0px 0px rgba(0, 0, 0, 0)",
+      },
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: [
+          "BlinkMacSystemFont",
+          "-apple-system",
+          "Inter",
+          "Roboto",
+          "Oxygen",
+          "Ubuntu",
+          "Cantarell",
+          "Fira Sans",
+          "Droid Sans",
+          "Helvetica Neue",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
+        mono: ["Source Code Pro", "Menlo", "monospace"],
       },
-      width: {
-        72: "18rem",
-      },
+      stroke: (theme) => ({
+        white: theme("colors.white"),
+        black: theme("colors.black"),
+      }),
     },
   },
   variants: {
-    backgroundColor: ["responsive", "hover", "focus", "active"],
+    extend: {
+      inset: ["group-hover"],
+      stroke: ["dark"],
+      height: ["hover"],
+      backgroundColor: ["active"],
+    },
   },
-  plugins: [require("@tailwindcss/ui"), require("tailwindcss-hyphens")],
-  purge: {
-    enabled: process.env.NODE_ENV === "production",
-    content: [
-      "./components/**/*.tsx",
-      "./pages/**/*.tsx",
-      "./public/posts/*.json",
-    ],
+  plugins: [],
+  corePlugins: {
+    preflight: true,
   },
 };

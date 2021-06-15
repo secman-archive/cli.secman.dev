@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import Highlight, { Prism } from "prism-react-renderer";
 import light from "prism-react-renderer/themes/github";
 import { useLayoutEffect } from "react";
-import theme from "../pages/api/theme";
-import { Code } from "@chakra-ui/layout";
 
 (typeof global !== "undefined" ? global : (window as any)).Prism = Prism;
 
@@ -90,85 +88,80 @@ export function RawCodeBlock({
   }
 
   return (
-    <Code>
-      <Highlight
-        Prism={Prism}
-        code={code}
-        // @ts-expect-error because typings are bad
-        language={
-          language === "shell"
-            ? "bash"
-            : language === "text"
-            ? "diff"
-            : language
-        }
-      >
-        {({ className, style, tokens, getLineProps, getTokenProps }) => (
-          <pre
-            className={
-              className + " flex overflow-y-auto " + (extraClassName ?? "")
-            }
-            style={{ ...style }}
-          >
-            {!disablePrefixes &&
-              tokens.length === 1 &&
-              (language === "bash" || language === "shell") && (
-                <code className="pr-2 sm:pr-3">
-                  <div className={codeDivClassNames}>$</div>
-                </code>
-              )}
-            {tokens.length > 1 && !disablePrefixes && (
+    <Highlight
+      Prism={Prism}
+      theme={light}
+      code={code}
+      // @ts-expect-error because typings are bad
+      language={
+        language === "shell" ? "bash" : language === "text" ? "diff" : language
+      }
+    >
+      {({ className, style, tokens, getLineProps, getTokenProps }) => (
+        <pre
+          className={
+            className + " flex overflow-y-auto " + (extraClassName ?? "")
+          }
+          style={{ ...style }}
+        >
+          {!disablePrefixes &&
+            tokens.length === 1 &&
+            (language === "bash" || language === "shell") && (
               <code className="pr-2 sm:pr-3">
-                {tokens.map((line, i) =>
-                  line[0]?.empty && i === tokens.length - 1 ? null : (
-                    <div key={i + "l"} className={codeDivClassNames}>
-                      {enableLineRef ? (
-                        <a
-                          id={`L${i + 1}`}
-                          href={`#L${i + 1}`}
-                          onClick={enableLineRef && onClick}
-                        >
-                          {i + 1}{" "}
-                        </a>
-                      ) : (
-                        i + 1
-                      )}
-                    </div>
-                  )
-                )}
+                <div className={codeDivClassNames}>$</div>
               </code>
             )}
-            <code>
-              {tokens.map((line, i) => {
-                const lineProps = getLineProps({ line, key: i });
-                lineProps.className += " text-xs";
-                if (
-                  enableLineRef &&
-                  hashValue &&
-                  ((arr, index) =>
-                    Math.min(...arr) <= index && index <= Math.max(...arr))(
-                    hashValue
-                      .split("-")
-                      .map((e) => /([\d]+)/.exec(e)![1])
-                      .map((n) => parseInt(n, 10)),
-                    i + 1
-                  )
-                ) {
-                  lineProps.className = `${lineProps.className} highlight-line`;
-                }
-                return line[0]?.empty && i === tokens.length - 1 ? null : (
-                  <div key={i} {...lineProps}>
-                    {line.map((token, key) => (
-                      <span key={key} {...getTokenProps({ token, key })} />
-                    ))}
+          {tokens.length > 1 && !disablePrefixes && (
+            <code className="pr-2 sm:pr-3">
+              {tokens.map((line, i) =>
+                line[0]?.empty && i === tokens.length - 1 ? null : (
+                  <div key={i + "l"} className={codeDivClassNames}>
+                    {enableLineRef ? (
+                      <a
+                        id={`L${i + 1}`}
+                        href={`#L${i + 1}`}
+                        onClick={enableLineRef && onClick}
+                      >
+                        {i + 1}{" "}
+                      </a>
+                    ) : (
+                      i + 1
+                    )}
                   </div>
-                );
-              })}
+                )
+              )}
             </code>
-          </pre>
-        )}
-      </Highlight>
-    </Code>
+          )}
+          <code>
+            {tokens.map((line, i) => {
+              const lineProps = getLineProps({ line, key: i });
+              lineProps.className += " text-xs";
+              if (
+                enableLineRef &&
+                hashValue &&
+                ((arr, index) =>
+                  Math.min(...arr) <= index && index <= Math.max(...arr))(
+                  hashValue
+                    .split("-")
+                    .map((e) => /([\d]+)/.exec(e)![1])
+                    .map((n) => parseInt(n, 10)),
+                  i + 1
+                )
+              ) {
+                lineProps.className = `${lineProps.className} highlight-line`;
+              }
+              return line[0]?.empty && i === tokens.length - 1 ? null : (
+                <div key={i} {...lineProps}>
+                  {line.map((token, key) => (
+                    <span key={key} {...getTokenProps({ token, key })} />
+                  ))}
+                </div>
+              );
+            })}
+          </code>
+        </pre>
+      )}
+    </Highlight>
   );
 }
 

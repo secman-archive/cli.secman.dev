@@ -1,55 +1,95 @@
-import { Link, Text, List, ListItem } from "@chakra-ui/react";
-import { LinkIcon } from "@chakra-ui/icons";
-import { Hero } from "../components/Hero";
-import { Container } from "../components/Container";
-import { Main } from "../components/Main";
-import { DarkModeSwitch } from "../components/DarkModeSwitch";
-import { CTA } from "../components/CTA";
-// import { Footer } from "../components/Footer";
+import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 import CodeBlock from "../components/CodeBlock";
-import { URLS } from "./api/routes";
+import Footer from "../components/Footer";
+import { NextPage } from "next";
+import InlineCode from "../components/InlineCode";
+import Header from "../components/Header";
+import FO from "../components/FadeObject";
+import { InstallSection } from "../content/install_section";
+import { URLS } from "../api/routes";
 
-const Index = () => (
-  <div>
-    <Head>
-      <title>Secman CLI</title>
-    </Head>
-    <Container height="100vh">
-      <Hero />
-      <Main>
-        <div className="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
-          <div key="windows" className="my-4">
-            <Text className="inter font-bold my-2">Windows</Text>
-            <CodeBlock
-              language="bash"
-              code={`iwr -useb https://cli.secman.dev/install.ps1 | iex`}
-            />
-          </div>
-          <div key="ml" className="my-4">
-            <Text className="inter font-bold my-2">MacOS/Linux</Text>
-            <CodeBlock
-              language="bash"
-              code={`curl -fsSL https://cli.secman.dev/install.sh | bash`}
-            />
-          </div>
-          <List spacing={3} my={0}>
-            <ListItem>
-              <i className="fab fa-github-alt" />
-              &nbsp;
-              <Link className="inter" isExternal href={URLS.secman_repo} flexGrow={1} mr={2}>
-                Secman Repo <LinkIcon />
-              </Link>
-            </ListItem>
-          </List>
+const Home: NextPage = () => {
+  return (
+    <>
+      <Head>
+        <title>Secman CLI</title>
+      </Head>
+
+      <div className="bg-white">
+        <div className="bg-gray-50 border-b border-gray-200">
+          <Header />
         </div>
-        <div></div>
-      </Main>
 
-      <DarkModeSwitch />
-      <CTA />
-    </Container>
-  </div>
-);
+        <div className="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
+          <FO>
+            <a className="hover:underline">
+              <h3 className="font-bold text-xl" id="installation">
+                Installation
+              </h3>
+            </a>
+          </FO>
+          <InstallSection />
+        </div>
+        <div className="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
+          <FO>
+            <a className="hover:underline">
+              <h3 className="font-bold text-xl" id="getting-started">
+                Getting Started
+              </h3>
+            </a>
+          </FO>
+          <p className="my-4 text-gray-700">Initializing Vault</p>
+          <CodeBlock code="secman init" language="bash" />
+          <p className="my-4 text-gray-700">
+            Start using <InlineCode>secman</InlineCode>
+          </p>
+        </div>
+        <div className="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8">
+          <CodeBlock code={`secman insert MY_SECRET_TOKEN`} language="bash" />
+          <p className="my-4 text-gray-700">Authenticate With GitHub</p>
+          <CodeBlock code="secman auth login" language="bash" />
+          <p className="my-4 text-gray-700">Sync Your Passwords</p>
+          <CodeBlock code="secman sync start" language="bash" />
+        </div>
+        <div className="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8">
+          <p className="my-4 text-gray-700">
+            You can find more commands in{" "}
+            <Link href={`${URLS.docs.main}/commands`}>
+              <a className="link">Docs</a>
+            </Link>
+            .
+          </p>
+        </div>
+        <div className="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
+          <FO>
+            <Link href={URLS.docs.main}>
+              <a className="hover:underline">
+                <h3 className="font-bold text-xl" id="docs">
+                  Docs
+                </h3>
+              </a>
+            </Link>
+          </FO>
 
-export default Index;
+          <p className="my-4 text-gray-700">
+            Secman comes with{" "}
+            <Link href={URLS.docs.main}>
+              <a className="link">docs</a>
+            </Link>{" "}
+          </p>
+          <p className="my-4 text-gray-700">
+            Docs pages also contain information about the built in tools that
+            Secman provides.
+          </p>
+        </div>
+        <div className="mt-20">
+          <Footer />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Home;
