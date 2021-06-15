@@ -828,10 +828,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@supabase/ui@^0.27.2":
-  version "0.27.2"
-  resolved "https://registry.yarnpkg.com/@supabase/ui/-/ui-0.27.2.tgz#629d2c39c200664b5abb4802fa116328f75a6942"
-  integrity sha512-plvxFE99+Df9s/dy2MrKtUL434uFNQD0QeNdK3K8JICnXL47bWIESHqdSCz8YoSk0EG7l7mojZp9VSFBxgqmng==
+"@supabase/ui@^0.27.3":
+  version "0.27.3"
+  resolved "https://registry.yarnpkg.com/@supabase/ui/-/ui-0.27.3.tgz#4d64e22c72793211cb92cc771e16f4cb87b4b48f"
+  integrity sha512-SO7TO/TIK6qziHUTmd2YpTmUtpBfYrN4Gx9tL7pYDHhfmmVApmYXmxEVexHAvHkSsxaK8yPER9KbMpwXx3ZwPQ==
   dependencies:
     lodash "^4.17.20"
     prop-types "^15.7.2"
