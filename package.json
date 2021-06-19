@@ -60,7 +60,7 @@
     "autoprefixer": "^10.2.4",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react": "^7.24.0",
     "isomorphic-unfetch": "^3.1.0",
     "jest": "^26.6.3",
     "postcss-import": "^14.0.0",
