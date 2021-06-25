@@ -23,7 +23,7 @@
     "marked": "^2.1.2",
     "next": "10.0.9",
     "next-plugin-preact": "^3.0.3",
-    "postcss": "8.3.4",
+    "postcss": "8.3.5",
     "preact": "^10.5.12",
     "preact-render-to-string": "^5.1.19",
     "prism-react-renderer": "^1.2.0",
