@@ -1,6 +1,5 @@
 import React from "react";
 import DevelopersData from "../api/Developers.json";
-import { useRouter } from "next/router";
 import { Typography } from "@supabase/ui";
 
 type Props = {
@@ -11,7 +10,6 @@ type Props = {
 };
 
 const Developers = () => {
-  const { basePath } = useRouter();
   const iconSections = Object.values(DevelopersData).map((dev: Props) => {
     const { text, description, url, icon } = dev;
 

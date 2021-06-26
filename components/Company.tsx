@@ -33,6 +33,7 @@ const Company = () => {
           href={url}
           className="p-3 col-span-6 rounded hover:bg-gray-50 dark:hover:bg-dark-700 transition"
           target={isE ? "_blank" : ""}
+          rel="noreferrer"
         >
           {content}
         </a>
@@ -61,6 +62,7 @@ const Company = () => {
                     <a
                       href={caseStudy.url}
                       target="_blank"
+                      rel="noreferrer"
                       className="p-3 flex rounded-lg hover:bg-gray-100 dark:hover:bg-dark-700 transition ease-in-out duration-150 border dark:border-gray-600"
                     >
                       <div className="hidden sm:block flex-shrink-0">
