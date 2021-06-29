@@ -21,7 +21,7 @@
     "description": "Would you want to use a GUI password manager?, Secman Desktop is your best choice.",
     "description_short": "",
     "label": "Soon",
-    "url": "https://subscribe.secman.dev/secman-desktop"
+    "url": ""
   },
   "secman-ci": {
     "name": "Secman CI",
@@ -29,6 +29,6 @@
     "description": "Automate Your Passwords.",
     "description_short": "",
     "label": "Soon",
-    "url": "https://subscribe.secman.dev/secman-ci"
+    "url": ""
   }
 }
