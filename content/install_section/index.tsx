@@ -14,7 +14,7 @@ export const InstallSection = () => {
   const homebrew = (
     <div key="homebrew" className="my-4 text-gray-700">
       <p className="mb-2">
-        <a href={URLS.homebrew_tap} className="link">
+        <a href={URLS.homebrew} className="link">
           Homebrew
         </a>{" "}
         (Mac, Linux):
@@ -38,7 +38,7 @@ export const InstallSection = () => {
     <div key="scoop" className="my-4 text-gray-700">
       <p className="mb-2">
         <a
-          href={URLS.sm_scoop_repo}
+          href={URLS.scoop}
           className="link"
         >
           Scoop

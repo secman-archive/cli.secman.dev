@@ -11,7 +11,7 @@ export const URLS = {
 
   secman_site_repo: "",
 
-  sm_scoop_repo: "",
+  scoop: "https://scoop.sh",
 
   docs: {
     main: "https://docs.secman.dev",
@@ -46,7 +46,7 @@ export const URLS = {
 
   logo: `${imgs_secman}/apps/secman-cli.svg`,
 
-  homebrew_tap: "",
+  homebrew: "https://brew.sh",
 
   cli_site: "https://cli.secman.dev",
 
@@ -74,6 +74,3 @@ URLS.dl_secman.cli = `${URLS.dl_secman.main}/cli`;
 URLS.dl_secman.ins = `${URLS.dl_secman.main}/installers`;
 
 URLS.github_relases_page = `${URLS.secman_repo}/releases/latest`;
-
-URLS.homebrew_tap = `${URLS.secman_org}/homebrew-smx`;
-URLS.sm_scoop_repo = `${URLS.secman_org}/sm-scoop`;
