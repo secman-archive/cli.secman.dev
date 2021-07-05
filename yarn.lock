@@ -321,13 +321,15 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@supabase/ui@^0.27.3":
-  version "0.27.3"
-  resolved "https://registry.yarnpkg.com/@supabase/ui/-/ui-0.27.3.tgz#4d64e22c72793211cb92cc771e16f4cb87b4b48f"
-  integrity sha512-SO7TO/TIK6qziHUTmd2YpTmUtpBfYrN4Gx9tL7pYDHhfmmVApmYXmxEVexHAvHkSsxaK8yPER9KbMpwXx3ZwPQ==
+"@supabase/ui@^0.28.1":
+  version "0.28.1"
+  resolved "https://registry.yarnpkg.com/@supabase/ui/-/ui-0.28.1.tgz#81beeafc42bf2af8e8f1e430843644ccc318abca"
+  integrity sha512-PpvZSWabgpgVrkkBbe3JONdWatFj+AWdKXLfPzCndPFD5CDTXH63B8r3Te4ivU9BYXqyfDXu25uA3gESS/bi3Q==
   dependencies:
     lodash "^4.17.20"
     prop-types "^15.7.2"
+  optionalDependencies:
+    fsevents "^2.3.2"
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
@@ -1859,7 +1861,7 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
-fsevents@~2.3.1, fsevents@~2.3.2:
+fsevents@^2.3.2, fsevents@~2.3.1, fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
