@@ -47,7 +47,7 @@
     "wrangler": "^0.0.2"
   },
   "devDependencies": {
-    "@types/dompurify": "^2.2.1",
+    "@types/dompurify": "^2.2.3",
     "@types/marked": "^2.0.3",
     "@types/node": "^16.0.0",
     "@types/prismjs": "^1.16.3",
