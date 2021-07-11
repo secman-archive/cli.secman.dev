@@ -4062,10 +4062,10 @@ terser@^5.7.0:
     source-map "~0.7.2"
     source-map-support "~0.5.19"
 
-timeago-react@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/timeago-react/-/timeago-react-3.0.2.tgz#1bd8b86c37c93bcd6a4340fea340e6c9c2bdd4e0"
-  integrity sha512-K+NqoRcE13xv7lrmHtZmy7G+yXF8ZxmuwRK/EGKyT1chpI3zmV6YnB5o9+slnOCq1dXuQJknr/hWjINyP7C9LA==
+timeago-react@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/timeago-react/-/timeago-react-3.0.3.tgz#25a92aaa49effb2efeeadbf9eeb8972777793840"
+  integrity sha512-xz4OhaFASV6LUfSaGfGQVY15NPtvUqQfN86vk5302PyJ675dJZ6Wj6gnulXRFynVtlA8m838oDviLvgiPJk2sA==
   dependencies:
     timeago.js "^4.0.0"
 
