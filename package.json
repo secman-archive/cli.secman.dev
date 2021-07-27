@@ -43,7 +43,7 @@
     "tailwindcss": "^2.2.7",
     "tailwindcss-hyphens": "^0.1.0",
     "timeago-react": "^3.0.3",
-    "webpack": "^5.44.0",
+    "webpack": "^5.46.0",
     "wrangler": "^0.0.2"
   },
   "devDependencies": {
