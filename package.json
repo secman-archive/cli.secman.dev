@@ -16,7 +16,7 @@
   "dependencies": {
     "@docsearch/react": "^1.0.0-alpha.14",
     "@fortawesome/fontawesome-free": "^5.15.3",
-    "@supabase/ui": "^0.30.0",
+    "@supabase/ui": "^0.31.0",
     "@tailwindcss/ui": "^0.7.2",
     "apexcharts": "^3.27.3",
     "dompurify": "^2.3.0",
