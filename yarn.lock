@@ -319,10 +319,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@supabase/ui@^0.31.0":
-  version "0.31.0"
-  resolved "https://registry.yarnpkg.com/@supabase/ui/-/ui-0.31.0.tgz#db66dcfee5eda814cd0754d979043dcbb8cf3940"
-  integrity sha512-HlyheJbvHzMi6LG4IG+kWcz0ewARGvzZ0xDTHaeaijL45eXpXJI/q99dB4kclC0iBtdXtzsSQQpvljUk4EBwhw==
+"@supabase/ui@^0.32.0":
+  version "0.32.0"
+  resolved "https://registry.yarnpkg.com/@supabase/ui/-/ui-0.32.0.tgz#c27ae82f5ba4a783195cadf0f5546e6d805453fe"
+  integrity sha512-F7Xtdgl1QfWy6E3Cn7cxxOLbgAfVoxNnO9CoJafUW6V7C+DZhHWDQUfIqaIrHsAbY3n08/in3hMdjLxPeUiV5g==
   dependencies:
     "@headlessui/react" "^1.0.0"
     lodash "^4.17.20"
