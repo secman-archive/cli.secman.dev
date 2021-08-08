@@ -14,7 +14,6 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx util/ pages/ components/"
   },
   "dependencies": {
-    "@docsearch/react": "^1.0.0-alpha.14",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@supabase/ui": "^0.32.0",
     "@tailwindcss/ui": "^0.7.2",

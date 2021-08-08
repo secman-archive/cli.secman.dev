@@ -2,7 +2,7 @@
 
 if ((Get-Command git -errorAction SilentlyContinue) -or (Get-Command npm -errorAction SilentlyContinue)) {
   # get latest release
-  $release_url = "https://api.github.com/repos/secman-team/secman/releases"
+  $release_url = "https://api.github.com/repos/scmn-dev/secman/releases"
   $tag = (Invoke-WebRequest -Uri $release_url -UseBasicParsing | ConvertFrom-Json)[0].tag_name
 
   $loc = "$HOME\AppData\Local\secman"
@@ -13,7 +13,7 @@ if ((Get-Command git -errorAction SilentlyContinue) -or (Get-Command npm -errorA
 
   Write-Host "Installing secman..." -ForegroundColor DarkCyan
 
-  Invoke-WebRequest https://github.com/secman-team/secman/releases/download/$tag/secman_windows_${tag}_amd64.zip -outfile secman_windows.zip
+  Invoke-WebRequest https://github.com/scmn-dev/secman/releases/download/$tag/secman_windows_${tag}_amd64.zip -outfile secman_windows.zip
 
   Expand-Archive secman_windows.zip
 

@@ -3,7 +3,7 @@ export const imgs_secman = "https://assets.secman.dev";
 export const URLS = {
   gh: "https://github.com",
 
-  secman_gh_api: "https://api.github.com/repos/secman-team/secman",
+  secman_gh_api: "https://api.github.com/repos/scmn-dev/secman",
 
   secman_org: "",
 
@@ -59,7 +59,7 @@ export const URLS = {
   docker_org: "https://hub.docker.com/u/smcr",
 };
 
-URLS.secman_org = `${URLS.gh}/secman-team`;
+URLS.secman_org = `${URLS.gh}/scmn-dev`;
 URLS.secman_repo = `${URLS.secman_org}/secman`;
 URLS.secman_site_repo = `${URLS.secman_org}/secman.dev`;
 

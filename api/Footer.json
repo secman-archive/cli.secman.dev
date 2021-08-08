@@ -12,11 +12,11 @@
         "isE": true
       },
       {
-        "text": "Secman Desktop",
+        "text": "Secman Vault",
         "url": null
       },
       {
-        "text": "Secman CI",
+        "text": "Secman Desktop",
         "url": null
       }
     ]
@@ -36,7 +36,7 @@
       },
       {
         "text": "Releases",
-        "url": "https://github.com/secman-team/secman/releases",
+        "url": "https://github.com/scmn-dev/secman/releases",
         "isE": true
       }
     ]

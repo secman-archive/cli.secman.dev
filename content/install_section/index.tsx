@@ -21,7 +21,7 @@ export const InstallSection = () => {
       </p>
       <CodeBlock
         language="bash"
-        code={`brew tap secman-team/smx\nbrew install secman`}
+        code={`brew tap scmn-dev/smx\nbrew install secman`}
       />
     </div>
   );
@@ -47,7 +47,7 @@ export const InstallSection = () => {
       </p>
       <CodeBlock
         language="bash"
-        code={`scoop bucket add secman https://github.com/secman-team/secman\nscoop install secman`}
+        code={`scoop bucket add secman https://github.com/scmn-dev/secman\nscoop install secman`}
       />
     </div>
   );
