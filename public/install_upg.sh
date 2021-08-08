@@ -3,9 +3,9 @@
 smLocLD=/usr/local/bin
 UNAME=$(uname)
 
-v=$(curl --silent "https://api.github.com/repos/secman-team/secman/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+v=$(curl --silent "https://api.github.com/repos/scmn-dev/secman/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 
-releases_api_url=https://github.com/secman-team/secman/releases/download
+releases_api_url=https://github.com/scmn-dev/secman/releases/download
 
 if [ "$UNAME" == "Linux" ]; then
     name="secman_linux_${v}_amd64"
