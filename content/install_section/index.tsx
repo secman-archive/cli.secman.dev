@@ -21,7 +21,7 @@ export const InstallSection = () => {
       </p>
       <CodeBlock
         language="bash"
-        code={`brew tap scmn-dev/smx\nbrew install secman`}
+        code={`brew tap scmn-dev/secman\nbrew install secman`}
       />
     </div>
   );
