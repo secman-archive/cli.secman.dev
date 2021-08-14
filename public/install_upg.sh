@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# curl -fsSL https://cli.secman.dev/install_upg.sh | bash
+
 smLocLD=/usr/local/bin
 UNAME=$(uname)
 

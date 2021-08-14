@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# curl -fsSL https://cli.secman.dev/install.sh | bash
+
 smLocLD=/usr/local/bin
 UNAME=$(uname)
 
@@ -14,11 +16,11 @@ v=$(curl --silent "https://api.github.com/repos/scmn-dev/secman/releases/latest"
 releases_api_url=https://github.com/scmn-dev/secman/releases/download
 
 successInstall() {
-    echo "yesss, secman was installed successfully 😎, you can type secman --help"
+    echo "🙏 Thanks for installing the Secman CLI! If this is your first time using the CLI, be sure to run `secman --help` first."
 }
 
 installSecman() {
-    echo "installing secman..."
+    echo "Installing secman version $v"
 
     if [ "$UNAME" == "Linux" ]; then
         name="secman_linux_${v}_amd64"
@@ -70,4 +72,5 @@ if [ -x "$(command -v secman)" ]; then
     successInstall
 else
     echo "Download failed 😔"
+    echo "Please try again."
 fi
