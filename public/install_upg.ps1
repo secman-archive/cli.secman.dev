@@ -1,4 +1,4 @@
-# iwr -useb https://cli.secman.dev/install.ps1 | iex
+# iwr -useb https://cli.secman.dev/install_upg.ps1 | iex
 
 # get latest release
 $release_url = "https://api.github.com/repos/scmn-dev/secman/releases"

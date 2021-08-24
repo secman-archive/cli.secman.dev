@@ -11,7 +11,7 @@ if ((Get-Command git -errorAction SilentlyContinue) -or (Get-Command npm -errorA
     Remove-Item $loc -Recurse -Force
   }
 
-  Write-Host "Installing secman..." -ForegroundColor DarkCyan
+  Write-Host "Installing secman version $tag" -ForegroundColor DarkCyan
 
   Invoke-WebRequest https://github.com/scmn-dev/secman/releases/download/$tag/secman_windows_${tag}_amd64.zip -outfile secman_windows.zip
 
@@ -28,7 +28,7 @@ if ((Get-Command git -errorAction SilentlyContinue) -or (Get-Command npm -errorA
   npm i -g @secman/sm-win
 
   if (Test-Path -path $loc) {
-    Write-Host "Yessss, secman was installed successfully, run secman --help" -ForegroundColor DarkGreen
+    Write-Host "🙏 Thanks for installing the Secman CLI! If this is your first time using the CLI, be sure to run `secman --help` first." -ForegroundColor DarkGreen
   } else {
     Write-Host "Download failed 😔"
   }
