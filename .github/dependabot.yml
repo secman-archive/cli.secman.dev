@@ -4,3 +4,6 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+    - abdfnx
+    - Timothee-Cardoso
