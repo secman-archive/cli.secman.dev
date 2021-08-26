@@ -12,11 +12,12 @@
         "isE": true
       },
       {
-        "text": "Secman Vault",
-        "url": null
+        "text": "Gepis",
+        "url": "https://gepis.secman.dev",
+        "isE": true
       },
       {
-        "text": "Secman Desktop",
+        "text": "Oxto",
         "url": null
       }
     ]
