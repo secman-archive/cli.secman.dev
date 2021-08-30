@@ -219,10 +219,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@supabase/ui@^0.34.0":
-  version "0.34.0"
-  resolved "https://registry.yarnpkg.com/@supabase/ui/-/ui-0.34.0.tgz#836ac5bdc2ad7a8b308fe43967e4463b8a52b254"
-  integrity sha512-3toOSCW6J/QcBDuhxt5vmlICn/TJmzd/CzAmLaOz5zsrRafiALwVXWtWQgYE/0Nh+gC0RmYGPKLrJp/a1MKX2g==
+"@supabase/ui@^0.34.1":
+  version "0.34.1"
+  resolved "https://registry.yarnpkg.com/@supabase/ui/-/ui-0.34.1.tgz#bc1392419c2424a13cf0df7e6d4be2c7cd44e64a"
+  integrity sha512-KdlxsO+GKD6sEpLkBIQSyi3mpdJAm4A/vkghJmHufsDv7da9rbksCuz2Han6GwoVrL8aD+uT6pGK94nFi3vKkA==
   dependencies:
     lodash "^4.17.20"
     prop-types "^15.7.2"
