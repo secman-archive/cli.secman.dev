@@ -1,14 +1,13 @@
 {
   "name": "secman-cli",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "scripts": {
     "publish_prod": "vercel --prod",
     "publish_dev": "vercel",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "serve": "serve out",
-    "test": "jest"
+    "serve": "serve out"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
