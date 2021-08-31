@@ -4,6 +4,7 @@
 
 smLocLD=/usr/local/bin
 UNAME=$(uname)
+smCluster=~/.sm-cluster
 
 v=$(curl --silent "https://api.github.com/repos/scmn-dev/secman/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 
@@ -42,3 +43,7 @@ fi
 
 # chmod
 sudo chmod 755 $smLocLD/secman
+
+if ! [ -d $smCluster ]; then
+    mkdir $smCluster
+fi
