@@ -42,7 +42,7 @@ export const URLS = {
   building_from_source: "",
 
   // logos
-  icon: `/icon.svg`,
+  icon: `${imgs_secman}/apps/icons/cli.svg`,
 
   logo: `${imgs_secman}/apps/secman-cli.svg`,
 
