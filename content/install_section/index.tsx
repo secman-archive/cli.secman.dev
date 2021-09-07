@@ -7,7 +7,7 @@ export const InstallSection = () => {
       <p className="py-2">Shell (Mac, Linux):</p>
       <CodeBlock
         language="bash"
-        code={`curl -fsSL https://cli.secman.dev/install.sh | bash`}
+        code={`curl -fsSL https://cli.secman.dev/unix | bash`}
       />
     </div>
   );
@@ -30,7 +30,7 @@ export const InstallSection = () => {
       <p className="mb-2">PowerShell (Windows):</p>
       <CodeBlock
         language="bash"
-        code={`iwr -useb https://cli.secman.dev/install.ps1 | iex`}
+        code={`iwr -useb https://cli.secman.dev/win | iex`}
       />
     </div>
   );
