@@ -7,14 +7,18 @@
         "url": "/"
       },
       {
+        "text": "Secman Desktop",
+        "url": "https://desktop.secman.dev",
+        "isE": true
+      },
+      {
         "text": "SM-Win",
         "url": "https://sm-win.secman.dev",
         "isE": true
       },
       {
         "text": "Gepis",
-        "url": "https://gepis.secman.dev",
-        "isE": true
+        "url": null
       },
       {
         "text": "Oxto",
