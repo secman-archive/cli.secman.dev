@@ -33,7 +33,7 @@
     "sass": "^1.39.0",
     "serve": "^12.0.0",
     "styletron-react": "^6.0.1",
-    "swiper": "^7.0.3",
+    "swiper": "^7.0.4",
     "swr": "^1.0.0",
     "tailwindcss": "^2.2.14",
     "tailwindcss-hyphens": "^0.1.0",
