@@ -31,7 +31,7 @@
     "react-ssr-prepass": "npm:preact-ssr-prepass",
     "react-transition-group": "^4.4.1",
     "sass": "^1.39.0",
-    "serve": "^12.0.0",
+    "serve": "^12.0.1",
     "styletron-react": "^6.0.1",
     "swiper": "^7.0.3",
     "swr": "^1.0.0",
