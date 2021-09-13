@@ -34,7 +34,7 @@
     "serve": "^12.0.1",
     "styletron-react": "^6.0.1",
     "swiper": "^7.0.5",
-    "swr": "^1.0.0",
+    "swr": "^1.0.1",
     "tailwindcss": "^2.2.14",
     "tailwindcss-hyphens": "^0.1.0",
     "timeago-react": "^3.0.3",
