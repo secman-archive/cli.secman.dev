@@ -30,15 +30,15 @@
     "react-reveal": "^1.2.2",
     "react-ssr-prepass": "npm:preact-ssr-prepass",
     "react-transition-group": "^4.4.1",
-    "sass": "^1.39.0",
+    "sass": "^1.39.2",
     "serve": "^12.0.1",
     "styletron-react": "^6.0.1",
     "swiper": "^7.0.5",
     "swr": "^1.0.1",
-    "tailwindcss": "^2.2.14",
+    "tailwindcss": "^2.2.15",
     "tailwindcss-hyphens": "^0.1.0",
     "timeago-react": "^3.0.3",
-    "webpack": "^5.52.0",
+    "webpack": "^5.52.1",
     "wrangler": "^0.0.2"
   },
   "devDependencies": {
@@ -52,7 +52,7 @@
     "autoprefixer": "^10.3.4",
     "isomorphic-unfetch": "^3.1.0",
     "postcss-import": "^14.0.0",
-    "typescript": "^4.4.2",
+    "typescript": "^4.4.3",
     "vercel": "^23.1.2"
   }
 }
