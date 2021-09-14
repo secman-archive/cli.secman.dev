@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@types/dompurify": "^2.2.3",
-    "@types/marked": "^3.0.0",
+    "@types/marked": "^3.0.1",
     "@types/node": "^16.9.1",
     "@types/prismjs": "^1.16.6",
     "@types/react": "^17.0.20",
