@@ -13,7 +13,7 @@
     "description": "Secman Desktop is the desktop client for secman.",
     "description_short": "",
     "label": "",
-    "url": "https://desktop.secman.dev"
+    "url": "https://secman.dev/download"
   },
   "sm-win": {
     "name": "SM-Win",
