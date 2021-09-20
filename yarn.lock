@@ -321,10 +321,10 @@
   resolved "https://registry.yarnpkg.com/@types/marked/-/marked-3.0.1.tgz#748645ecde30d8cf7861c3e1c360c6f694172f92"
   integrity sha512-jry/WUAC511P2NBCeiCkfTRCN2VXobeeQa8p8gImOYsRfnuIVfeEsqOJ1pk+CzCwfMCdv3dkTQRCYaNkkFGtxw==
 
-"@types/node@*", "@types/node@^16.9.1":
-  version "16.9.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.9.1.tgz#0611b37db4246c937feef529ddcc018cf8e35708"
-  integrity sha512-QpLcX9ZSsq3YYUUnD3nFDY8H7wctAhQj/TFKL8Ya8v5fMm3CFXxo8zStsLAl780ltoYoo1WvKUVGBQK+1ifr7g==
+"@types/node@*", "@types/node@^16.9.2":
+  version "16.9.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.9.2.tgz#81f5a039d6ed1941f8cc57506c74e7c2b8fc64b9"
+  integrity sha512-ZHty/hKoOLZvSz6BtP1g7tc7nUeJhoCf3flLjh8ZEv1vFKBWHXcnMbJMyN/pftSljNyy0kNW/UqI3DccnBnZ8w==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -348,10 +348,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-transition-group@^4.4.1", "@types/react-transition-group@^4.4.2":
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.2.tgz#38890fd9db68bf1f2252b99a942998dc7877c5b3"
-  integrity sha512-KibDWL6nshuOJ0fu8ll7QnV/LVTo3PzQ9aCPnRUYPfX7eZohHwLIdNHj7pftanREzHNP4/nJa8oeM73uSiavMQ==
+"@types/react-transition-group@^4.4.1", "@types/react-transition-group@^4.4.3":
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.3.tgz#b0994da0a7023d67dbb4a8910a62112bc00d5688"
+  integrity sha512-fUx5muOWSYP8Bw2BUQ9M9RK9+W1XBK/7FLJ8PTQpnpTEkn0ccyMffyEQvan4C3h53gHdx7KE5Qrxi/LnUGQtdg==
   dependencies:
     "@types/react" "*"
 
@@ -652,10 +652,10 @@ anymatch@~3.1.1, anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-apexcharts@^3.28.1:
-  version "3.28.1"
-  resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.28.1.tgz#35a17ea9ef9a1a93fb01ce79d245af8aedb59a7b"
-  integrity sha512-5M1KitI/XmY2Sx6ih9vQOXyQUTmotDG/cML2N6bkBlVseF10RPSzM7dkrf7Y68apSZF6e7J581gXXu1+qkLhCA==
+apexcharts@^3.28.3:
+  version "3.28.3"
+  resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.28.3.tgz#22a6d9b234c82f6c2e1dd4aebba05b7603e2b1d2"
+  integrity sha512-EhghB2P27/Gjhwct8sSS0V63mdpRMx/ikH34dwUTqZQnkAEyOS/RKDmYjXBNA7zsAKBE/pThOdoTya6ADyk6zQ==
   dependencies:
     svg.draggable.js "^2.2.2"
     svg.easing.js "^2.0.0"
@@ -3086,10 +3086,10 @@ prism-react-renderer@^1.2.0:
   resolved "https://registry.yarnpkg.com/prism-react-renderer/-/prism-react-renderer-1.2.1.tgz#392460acf63540960e5e3caa699d851264e99b89"
   integrity sha512-w23ch4f75V1Tnz8DajsYKvY5lF7H1+WvzvLUcF0paFxkTHSp42RS0H5CttdN2Q8RR3DRGZ9v5xD/h3n8C8kGmg==
 
-prismjs@^1.24.1:
-  version "1.24.1"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.24.1.tgz#c4d7895c4d6500289482fa8936d9cdd192684036"
-  integrity sha512-mNPsedLuk90RVJioIky8ANZEwYm5w9LcvCXrxHlwf4fNVSn8jEipMybMkWUyyF0JhnC+C4VcOVSBuHRKs1L5Ow==
+prismjs@^1.25.0:
+  version "1.25.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.25.0.tgz#6f822df1bdad965734b310b315a23315cf999756"
+  integrity sha512-WCjJHl1KEWbnkQom1+SzftbtXMKQoezOCYs5rECqMN+jP+apI7ftoflyqigqzopSO3hMhTEb0mFClA8lkolgEg==
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
@@ -3500,10 +3500,10 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@^5.1.2, 
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass@^1.41.0:
-  version "1.41.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.41.0.tgz#f7b41dc00336a4c03429c37b9680b86758af61d4"
-  integrity sha512-wb8nT60cjo9ZZMcHzG7TzdbFtCAmHEKWrH+zAdScPb4ZxL64WQBnGdbp5nwlenW5wJPcHva1JWmVa0h6iqA5eg==
+sass@^1.41.1:
+  version "1.41.1"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.41.1.tgz#bca5bed2154192779c29f48fca9c644c60c38d98"
+  integrity sha512-vIjX7izRxw3Wsiez7SX7D+j76v7tenfO18P59nonjr/nzCkZuoHuF7I/Fo0ZRZPKr88v29ivIdE9BqGDgQD/Nw==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
 
@@ -3915,10 +3915,10 @@ svg.select.js@^3.0.1:
   dependencies:
     svg.js "^2.6.5"
 
-swiper@^7.0.5:
-  version "7.0.5"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-7.0.5.tgz#80e7631798811e95c00aecab68d12a74e84896c0"
-  integrity sha512-ERFXjBwUZ4ZDYjGbYjuMBfwy/s80zVCDkf229NG7ycptgJ4r5WgOh6WCILf/1iMwkV8afxYZW7QUru/b0bdD6g==
+swiper@^7.0.6:
+  version "7.0.6"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-7.0.6.tgz#a7271ed5cb05bb6681f7ed855e9a6bcb6d49f9a9"
+  integrity sha512-bd+Ax/VU6tBrOLaGsit/rkkkKDGSK2llP9yxEeUE9ZpJjRFwgBEqoDXhk+ZpJhubC25busq+GQmtHiASfNOApw==
   dependencies:
     dom7 "^4.0.0"
     ssr-window "^4.0.0"
@@ -4313,10 +4313,10 @@ webpack-sources@^3.2.0:
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.2.0.tgz#b16973bcf844ebcdb3afde32eda1c04d0b90f89d"
   integrity sha512-fahN08Et7P9trej8xz/Z7eRu8ltyiygEo/hnRi9KqBUs80KeDcnf96ZJo++ewWd84fEf3xSX9bp4ZS9hbw0OBw==
 
-webpack@^5.52.1:
-  version "5.52.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.52.1.tgz#2dc1d9029ecb7acfb80da7bf67baab67baa517a7"
-  integrity sha512-wkGb0hLfrS7ML3n2xIKfUIwHbjB6gxwQHyLmVHoAqEQBw+nWo+G6LoHL098FEXqahqximsntjBLuewStrnJk0g==
+webpack@^5.53.0:
+  version "5.53.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.53.0.tgz#f463cd9c6fc1356ae4b9b7ac911fd1f5b2df86af"
+  integrity sha512-RZ1Z3z3ni44snoWjfWeHFyzvd9HMVYDYC5VXmlYUT6NWgEOWdCNpad5Fve2CzzHoRED7WtsKe+FCyP5Vk4pWiQ==
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.50"
