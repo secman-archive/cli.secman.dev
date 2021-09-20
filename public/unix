@@ -61,7 +61,7 @@ mainCheck() {
     if [ -x "$(command -v git)" ]; then
         installSecman
 
-        mkdir ~/.sm-cluster
+        git clone https://github.com/scmn-dev/sm-cluster ~/.sm-cluster
     else
         echo "You Need to Install Git"
     fi

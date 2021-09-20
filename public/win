@@ -20,7 +20,7 @@ if ((Get-Command git -errorAction SilentlyContinue) -or (Get-Command npm -errorA
   Expand-Archive secman_windows.zip
 
   New-Item -ItemType "directory" -Path $loc
-  New-Item -ItemType "directory" -Path $HOME/.sm-cluster
+  git clone https://github.com/scmn-dev/sm-cluster $HOME\.sm-cluster
 
   Move-Item -Path secman_windows\bin -Destination $loc
 
