@@ -35,9 +35,9 @@
     "styletron-react": "^6.0.1",
     "swiper": "^7.0.6",
     "swr": "^1.0.1",
-    "tailwindcss": "^2.2.15",
+    "tailwindcss": "^2.2.16",
     "tailwindcss-hyphens": "^0.1.0",
-    "timeago-react": "^3.0.3",
+    "timeago-react": "^3.0.4",
     "webpack": "^5.53.0",
     "wrangler": "^0.0.2"
   },
