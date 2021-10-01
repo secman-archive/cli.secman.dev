@@ -60,6 +60,7 @@ installSecman() {
 mainCheck() {
     if [ -x "$(command -v git)" ]; then
         installSecman
+
     else
         echo "You Need to Install Git"
     fi
