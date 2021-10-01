@@ -14,6 +14,26 @@
       "source": "/unix",
       "destination": "https://unix.secman.dev",
       "permanent": true
+    },
+    {
+      "source": "/install.ps1",
+      "destination": "https://win.secman.dev",
+      "permanent": true
+    },
+    {
+      "source": "/install.sh",
+      "destination": "https://unix.secman.dev",
+      "permanent": true
+    },
+    {
+      "source": "/install_upg.ps1",
+      "destination": "https://win-upg.secman.dev",
+      "permanent": true
+    },
+    {
+      "source": "/install_upg.sh",
+      "destination": "https://unix-upg.secman.dev",
+      "permanent": true
     }
   ]
 }
