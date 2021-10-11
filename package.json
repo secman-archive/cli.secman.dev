@@ -15,7 +15,7 @@
     "@tailwindcss/ui": "^0.7.2",
     "apexcharts": "^3.29.0",
     "dompurify": "^2.3.3",
-    "marked": "^3.0.4",
+    "marked": "^3.0.7",
     "next": "11.1.2",
     "next-plugin-preact": "^3.0.3",
     "postcss": "8.3.8",
