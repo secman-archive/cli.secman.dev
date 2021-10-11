@@ -1,3 +1,3 @@
-# [<img src="https://assets.secman.dev/icon.svg" width="100px" align="center" />](https://cli.secman.dev) **CLI Website**
+### cli.secman.dev
 
-secman cli website
+the old secman cli website
