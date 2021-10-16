@@ -33,6 +33,7 @@ const Product = () => {
       url ? (
         <a
           key={name}
+          rel="noopener noreferrer"
           href={url}
           target="_blank"
           className="p-3 col-span-6 rounded hover:bg-gray-50 dark:hover:bg-dark-700 transition"

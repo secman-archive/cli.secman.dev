@@ -23,6 +23,7 @@ const Footer = () => {
             <div className="flex space-x-6">
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={URLS.secman_repo}
                 className="text-gray-300 hover:text-gray-400 transition"
               >
@@ -42,6 +43,7 @@ const Footer = () => {
               </a>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={URLS.twitter}
                 className="text-gray-300 hover:text-gray-400 transition"
               >
