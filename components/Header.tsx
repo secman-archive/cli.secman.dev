@@ -229,6 +229,7 @@ const Nav = () => {
                   <a
                     href={URLS.demo}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className={`
                     transition
                     inline-flex items-center px-1 border-b-2 border-transparent text-sm font-medium
@@ -245,6 +246,7 @@ const Nav = () => {
                   </div>
                   <a
                     target="_blank"
+                    rel="noopener noreferrer"
                     href={URLS.secman_repo}
                     className="text-gray-300 hover:text-gray-400 transition inline-flex items-center px-1"
                   >

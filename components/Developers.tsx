@@ -44,6 +44,7 @@ const Developers = () => {
       <a
         key={text}
         href={url}
+        rel="noopener noreferrer"
         className="p-3 col-span-6 rounded hover:bg-gray-50 dark:hover:bg-dark-700 transition"
         target="_blank"
       >

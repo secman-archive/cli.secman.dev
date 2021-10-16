@@ -66,6 +66,7 @@ const Res = () => {
                 <li className="flow-root" key={`flyout_case_${idx}`}>
                   <a
                     href={cryp.url}
+                    rel="noopener noreferrer"
                     target="_blank"
                     className="p-3 flex rounded-lg hover:bg-gray-100 dark:hover:bg-dark-700 transition ease-in-out duration-150 border dark:border-gray-600"
                   >
