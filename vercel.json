@@ -1,11 +1,6 @@
 {
   "redirects": [
     {
-      "source": "/",
-      "destination": "https://secman.dev/docs/cli",
-      "permanent": true
-    },
-    {
       "source": "/win",
       "destination": "https://win.secman.dev",
       "permanent": true
